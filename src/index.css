@@ -8,9 +8,14 @@
 
 html {
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 62.5%;
 }
 
 body {
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 img {
