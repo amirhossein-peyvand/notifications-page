@@ -1,0 +1,50 @@
+@import "colors.scss";
+
+.markWebber {
+  align-items: center;
+  column-gap: 1rem;
+  display: flex;
+
+  picture {
+    img {
+      min-width: 2rem;
+      width: 4rem;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+
+    p {
+      color: $grayish-blue;
+      word-spacing: 1px;
+      letter-spacing: 0.1px;
+
+      .fullName {
+        color: $very-dark-blue;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .fullName:hover {
+        color: $blue;
+      }
+
+      strong:not(.fullName) {
+        color: $dark-grayish-blue;
+        cursor: pointer;
+      }
+
+      strong:not(.fullName):hover {
+        color: $blue;
+      }
+    }
+
+    span {
+      color: $grayish-blue;
+      font-size: 1.2rem;
+    }
+  }
+}
