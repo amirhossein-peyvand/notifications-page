@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Notification from "./components/Notification";
 import "./sass/App.scss";
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <main></main>
+      <main>
+        <Notification />
+      </main>
     </div>
   );
 }
