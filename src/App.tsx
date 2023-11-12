@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Notification from "./components/Notification";
 import "./sass/App.scss";
+import markWebber from "./assets/avatar-mark-webber.webp";
 
 function App() {
   return (
@@ -9,7 +10,12 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <Notification />
+        <Notification
+          fullName="Mark Webber"
+          profilePhoto={markWebber}
+          reactionText="reacted to your recent post My first tournament today!"
+          time="1m ago"
+        />
       </main>
     </div>
   );
