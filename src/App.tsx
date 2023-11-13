@@ -1,5 +1,8 @@
 import Navbar from "./components/Navbar";
+import ReactNotification from "./components/ReactNotification";
 import "./sass/App.scss";
+import markWebber from "./assets/avatar-mark-webber.webp";
+import nathanPeterson from "./assets/avatar-nathan-peterson.webp";
 
 function App() {
   return (
@@ -7,7 +10,23 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <main></main>
+      <main>
+        <ReactNotification
+          fullName="Mark Webber"
+          post="My first tournament today!"
+          profilePhoto={markWebber}
+          text="reacted to your recent post"
+          time="1m ago"
+        />
+
+        <ReactNotification
+          fullName="Nathan Peterson"
+          post="5 end-game strategies to increase your win rate"
+          profilePhoto={nathanPeterson}
+          text="reacted to your recent post"
+          time="2 weeks ago"
+        />
+      </main>
     </div>
   );
 }

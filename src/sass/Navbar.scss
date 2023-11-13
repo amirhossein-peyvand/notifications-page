@@ -1,14 +1,15 @@
 @import "colors.scss";
 
 .navbar {
-  display: flex;
   align-items: center;
+  column-gap: 0.5rem;
+  display: flex;
   justify-content: space-between;
 
   .left {
     align-items: center;
-    display: flex;
     column-gap: 1rem;
+    display: flex;
 
     p {
       color: $very-dark-blue;
@@ -38,7 +39,7 @@
     }
 
     p:hover {
-      opacity: 0.8;
+      color: $blue;
     }
   }
 }
