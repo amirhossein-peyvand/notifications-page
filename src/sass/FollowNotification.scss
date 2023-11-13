@@ -55,3 +55,14 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) {
+  .follow {
+    .profInfo {
+      p,
+      .time {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

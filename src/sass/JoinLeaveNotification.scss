@@ -61,3 +61,14 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) {
+  .joinLeave {
+    .profInfo {
+      p,
+      .time {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -74,3 +74,20 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) {
+  .comment {
+    .left {
+      picture {
+        img {
+          width: 3.5rem;
+        }
+      }
+
+      p,
+      .time {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -70,3 +70,17 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) {
+  .reaction {
+    .profInfo {
+      p {
+        font-size: 1.2rem;
+      }
+
+      .time {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

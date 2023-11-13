@@ -63,3 +63,21 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) {
+  .privateMessage {
+    .profInfo {
+      p {
+        font-size: 1.2rem;
+      }
+
+      .time {
+        font-size: 1.2rem;
+      }
+
+      .privateMessage {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
