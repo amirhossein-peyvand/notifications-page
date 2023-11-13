@@ -5,6 +5,8 @@ import markWebber from "./assets/avatar-mark-webber.webp";
 import nathanPeterson from "./assets/avatar-nathan-peterson.webp";
 import FollowNotification from "./components/FollowNotification";
 import angelaGray from "./assets/avatar-angela-gray.webp";
+import JoinLeaveNotification from "./components/JoinLeaveNotification";
+import jacobThompson from "./assets/avatar-jacob-thompson.webp";
 
 function App() {
   return (
@@ -26,6 +28,14 @@ function App() {
           profilePhoto={angelaGray}
           text="followed you"
           time="5m ago"
+        />
+
+        <JoinLeaveNotification
+          profilePhoto={jacobThompson}
+          fullName="Jacob Thompson"
+          text="has joined your group"
+          group="Chess Club"
+          time="1 day ago"
         />
 
         <ReactNotification
