@@ -12,6 +12,7 @@ import rizkyHasanuddin from "./assets/avatar-rizky-hasanuddin.webp";
 import CommentNotification from "./components/CommentNotification";
 import kimberlySmith from "./assets/avatar-kimberly-smith.webp";
 import chessImage from "./assets/image-chess.webp";
+import annaKim from "./assets/avatar-anna-kim.webp";
 
 function App() {
   return (
@@ -65,6 +66,14 @@ function App() {
           post="5 end-game strategies to increase your win rate"
           profilePhoto={nathanPeterson}
           text="reacted to your recent post"
+          time="2 weeks ago"
+        />
+
+        <JoinLeaveNotification
+          fullName="Anna Kim"
+          profilePhoto={annaKim}
+          group="Chess Club"
+          text="left the group"
           time="2 weeks ago"
         />
       </main>
