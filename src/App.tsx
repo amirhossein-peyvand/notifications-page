@@ -9,6 +9,9 @@ import JoinLeaveNotification from "./components/JoinLeaveNotification";
 import jacobThompson from "./assets/avatar-jacob-thompson.webp";
 import PrivateMessage from "./components/PrivateMessage";
 import rizkyHasanuddin from "./assets/avatar-rizky-hasanuddin.webp";
+import CommentNotification from "./components/CommentNotification";
+import kimberlySmith from "./assets/avatar-kimberly-smith.webp";
+import chessImage from "./assets/image-chess.webp";
 
 function App() {
   return (
@@ -47,6 +50,14 @@ function App() {
           profilePhoto={rizkyHasanuddin}
           text="sent you a private message"
           time="5 days ago"
+        />
+
+        <CommentNotification
+          fullName="Kimberly Smith"
+          mainUserPhoto={chessImage}
+          profilePhoto={kimberlySmith}
+          text="commented on your picture"
+          time="1 week ago"
         />
 
         <ReactNotification
