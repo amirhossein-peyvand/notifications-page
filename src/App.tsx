@@ -7,6 +7,8 @@ import FollowNotification from "./components/FollowNotification";
 import angelaGray from "./assets/avatar-angela-gray.webp";
 import JoinLeaveNotification from "./components/JoinLeaveNotification";
 import jacobThompson from "./assets/avatar-jacob-thompson.webp";
+import PrivateMessage from "./components/PrivateMessage";
+import rizkyHasanuddin from "./assets/avatar-rizky-hasanuddin.webp";
 
 function App() {
   return (
@@ -36,6 +38,15 @@ function App() {
           text="has joined your group"
           group="Chess Club"
           time="1 day ago"
+        />
+
+        <PrivateMessage
+          fullName="Rizky Hasanuddin"
+          privateMessage="Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game."
+          profilePhoto={rizkyHasanuddin}
+          text="sent you a private message"
+          time="5 days ago"
         />
 
         <ReactNotification
