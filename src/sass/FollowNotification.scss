@@ -41,3 +41,17 @@
     }
   }
 }
+
+@media screen and (min-width: 360px) {
+  .follow {
+    .profInfo {
+      p {
+        font-size: 1rem;
+      }
+
+      .time {
+        font-size: 1rem;
+      }
+    }
+  }
+}
