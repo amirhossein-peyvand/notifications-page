@@ -1,10 +1,10 @@
 @import "colors.scss";
 
-.reaction {
+.follow {
   align-items: center;
-  column-gap: 1rem;
   display: flex;
   padding: 1rem;
+  column-gap: 1rem;
 
   picture {
     img {
@@ -26,26 +26,11 @@
         color: $very-dark-blue;
         cursor: pointer;
         letter-spacing: 0.2px;
-        word-spacing: 1px;
         margin-right: 0.3rem;
+        word-spacing: 1px;
       }
 
       .fullName:hover {
-        color: $blue;
-      }
-
-      .text,
-      .post {
-        word-spacing: 1px;
-        letter-spacing: 0.2px;
-      }
-
-      .post {
-        cursor: pointer;
-        margin-left: 0.3rem;
-      }
-
-      .post:hover {
         color: $blue;
       }
     }

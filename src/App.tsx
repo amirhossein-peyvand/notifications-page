@@ -3,6 +3,8 @@ import ReactNotification from "./components/ReactNotification";
 import "./sass/App.scss";
 import markWebber from "./assets/avatar-mark-webber.webp";
 import nathanPeterson from "./assets/avatar-nathan-peterson.webp";
+import FollowNotification from "./components/FollowNotification";
+import angelaGray from "./assets/avatar-angela-gray.webp";
 
 function App() {
   return (
@@ -17,6 +19,13 @@ function App() {
           profilePhoto={markWebber}
           text="reacted to your recent post"
           time="1m ago"
+        />
+
+        <FollowNotification
+          fullName="Angela Gray"
+          profilePhoto={angelaGray}
+          text="followed you"
+          time="5m ago"
         />
 
         <ReactNotification
