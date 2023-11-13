@@ -84,3 +84,23 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  .reaction {
+    picture {
+      img {
+        width: 3.7rem;
+      }
+    }
+
+    .profInfo {
+      p {
+        font-size: 1.3rem;
+      }
+
+      .time {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

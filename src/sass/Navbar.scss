@@ -87,3 +87,25 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  .navbar {
+    .left {
+      p {
+        font-size: 1.7rem;
+      }
+
+      span {
+        font-size: 1.3rem;
+        height: 2.1rem;
+        width: 3.2rem;
+      }
+    }
+
+    .right {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

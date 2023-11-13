@@ -91,3 +91,20 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  .comment {
+    .left {
+      picture {
+        img {
+          width: 3.7rem;
+        }
+      }
+
+      p,
+      .time {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

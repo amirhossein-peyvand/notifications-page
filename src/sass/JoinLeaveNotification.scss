@@ -72,3 +72,20 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  .joinLeave {
+    picture {
+      img {
+        width: 3.7rem;
+      }
+    }
+
+    .profInfo {
+      p,
+      .time {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
