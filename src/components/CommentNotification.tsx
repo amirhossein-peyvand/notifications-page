@@ -3,6 +3,7 @@ import "../sass/CommentNotification.scss";
 interface Props {
   fullName: string;
   mainUserPhoto: string;
+  newNotification?: boolean;
   profilePhoto: string;
   text: string;
   time: string;
@@ -11,12 +12,13 @@ interface Props {
 const CommentNotification = ({
   fullName,
   mainUserPhoto,
+  newNotification,
   profilePhoto,
   text,
   time,
 }: Props) => {
   return (
-    <article className="comment">
+    <article className={`comment ${newNotification && "new"}`}>
       <section className="left">
         <picture>
           <img src={profilePhoto} alt="profilePhoto" />

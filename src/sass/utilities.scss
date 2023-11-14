@@ -1,0 +1,14 @@
+.new {
+  background-color: hsl(220, 82%, 98%);
+  border-radius: 5px;
+
+  p::after {
+    background-color: $red;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    margin-left: 0.4rem;
+    width: 6px;
+  }
+}

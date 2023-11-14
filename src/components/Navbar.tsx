@@ -1,14 +1,19 @@
 import "../sass/Navbar.scss";
 
-const Navbar = () => {
+interface Props {
+  notifications?: number;
+  onMarkAll?: () => void;
+}
+
+const Navbar = ({ notifications, onMarkAll }: Props) => {
   return (
     <nav className="navbar">
       <div className="left">
         <p>Notifications</p>
-        <span>3</span>
+        <span>{notifications}</span>
       </div>
       <div className="right">
-        <p>Mark all as read</p>
+        <p onClick={onMarkAll}>Mark all as read</p>
       </div>
     </nav>
   );

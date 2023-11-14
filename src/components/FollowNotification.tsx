@@ -2,14 +2,21 @@ import "../sass/FollowNotification.scss";
 
 interface Props {
   fullName: string;
+  newNotification?: boolean;
   profilePhoto: string;
   text: string;
   time: string;
 }
 
-const FollowNotification = ({ fullName, profilePhoto, text, time }: Props) => {
+const FollowNotification = ({
+  fullName,
+  newNotification,
+  profilePhoto,
+  text,
+  time,
+}: Props) => {
   return (
-    <article className="follow">
+    <article className={`follow ${newNotification && "new"}`}>
       <picture>
         <img src={profilePhoto} alt="profilePhoto" />
       </picture>

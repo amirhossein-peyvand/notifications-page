@@ -2,6 +2,7 @@ import "../sass/ReactNotification.scss";
 
 interface Props {
   fullName: string;
+  newNotification?: boolean;
   post: string;
   profilePhoto: string;
   text: string;
@@ -10,13 +11,14 @@ interface Props {
 
 const ReactNotification = ({
   fullName,
+  newNotification,
   post,
   profilePhoto,
   text,
   time,
 }: Props) => {
   return (
-    <article className="reaction">
+    <article className={`reaction ${newNotification && "new"}`}>
       <picture>
         <img src={profilePhoto} alt="profilePhoto" />
       </picture>

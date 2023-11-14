@@ -1,28 +1,39 @@
-import Navbar from "./components/Navbar";
-import ReactNotification from "./components/ReactNotification";
-import "./sass/App.scss";
+import { useState } from "react";
+import angelaGray from "./assets/avatar-angela-gray.webp";
+import annaKim from "./assets/avatar-anna-kim.webp";
+import jacobThompson from "./assets/avatar-jacob-thompson.webp";
+import kimberlySmith from "./assets/avatar-kimberly-smith.webp";
 import markWebber from "./assets/avatar-mark-webber.webp";
 import nathanPeterson from "./assets/avatar-nathan-peterson.webp";
-import FollowNotification from "./components/FollowNotification";
-import angelaGray from "./assets/avatar-angela-gray.webp";
-import JoinLeaveNotification from "./components/JoinLeaveNotification";
-import jacobThompson from "./assets/avatar-jacob-thompson.webp";
-import PrivateMessage from "./components/PrivateMessage";
 import rizkyHasanuddin from "./assets/avatar-rizky-hasanuddin.webp";
-import CommentNotification from "./components/CommentNotification";
-import kimberlySmith from "./assets/avatar-kimberly-smith.webp";
 import chessImage from "./assets/image-chess.webp";
-import annaKim from "./assets/avatar-anna-kim.webp";
+import CommentNotification from "./components/CommentNotification";
+import FollowNotification from "./components/FollowNotification";
+import JoinLeaveNotification from "./components/JoinLeaveNotification";
+import Navbar from "./components/Navbar";
+import PrivateMessage from "./components/PrivateMessage";
+import ReactNotification from "./components/ReactNotification";
+import "./sass/App.scss";
 
 function App() {
+  const [markedAll, setMarkedAll] = useState(false);
+  const [notifications, setNotifications] = useState(3);
+
   return (
     <div className="app">
       <header>
-        <Navbar />
+        <Navbar
+          notifications={notifications}
+          onMarkAll={() => {
+            setMarkedAll(true);
+            setNotifications(0);
+          }}
+        />
       </header>
       <main>
         <ReactNotification
           fullName="Mark Webber"
+          newNotification={markedAll ? false : true}
           post="My first tournament today!"
           profilePhoto={markWebber}
           text="reacted to your recent post"
@@ -31,16 +42,18 @@ function App() {
 
         <FollowNotification
           fullName="Angela Gray"
+          newNotification={markedAll ? false : true}
           profilePhoto={angelaGray}
           text="followed you"
           time="5m ago"
         />
 
         <JoinLeaveNotification
-          profilePhoto={jacobThompson}
           fullName="Jacob Thompson"
-          text="has joined your group"
+          newNotification={markedAll ? false : true}
           group="Chess Club"
+          profilePhoto={jacobThompson}
+          text="has joined your group"
           time="1 day ago"
         />
 

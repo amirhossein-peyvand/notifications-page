@@ -2,6 +2,7 @@ import "../sass/JoinLeaveNotification.scss";
 
 interface Props {
   fullName: string;
+  newNotification?: boolean;
   group: string;
   profilePhoto: string;
   text: string;
@@ -10,13 +11,14 @@ interface Props {
 
 const JoinLeaveNotification = ({
   fullName,
+  newNotification,
   group,
   profilePhoto,
   text,
   time,
 }: Props) => {
   return (
-    <article className="joinLeave">
+    <article className={`joinLeave ${newNotification && "new"}`}>
       <picture>
         <img src={profilePhoto} alt="profilePhoto" />
       </picture>
